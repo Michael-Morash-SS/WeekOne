@@ -52,7 +52,7 @@ public class MainClass {
 				return true;
 			}
 			
-			indexCounter += count;
+			indexCounter += 1;
 			count = 1;
 		}
 		

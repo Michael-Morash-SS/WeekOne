@@ -7,7 +7,8 @@ package com.ss.assignments.weekone;
 public class MainClass {
 	public static void main(String[] args) {
 		//Demonstrate lambda functions
-		PerformOperation odd = isOdd();
+		MainClass object = new MainClass();
+		PerformOperation odd = object.isOdd();
 		PerformOperation prime = isPrime();
 		PerformOperation pallindrome = isPallindrome();
 		
@@ -18,7 +19,7 @@ public class MainClass {
 		System.out.println("12 is " + (prime.execute(12) ? "Prime" : "Not Prime"));
 	}
 	
-	public static PerformOperation isOdd() {
+	public PerformOperation isOdd() {
 		return (x) -> x % 2 == 1;
 	}
 	
